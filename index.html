@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for Bubble Sky (vn.daemonstack.bubblesky) by DAEMON STACK.">
+  <meta name="theme-color" content="#0b1530">
+  <title>Privacy Policy — Bubble Sky | DAEMON STACK</title>
+  <style>
+    :root {
+      --bg-top: #070e22;
+      --bg-mid: #10214a;
+      --bg-bot: #0a142e;
+      --card-bg: rgba(16, 30, 66, 0.78);
+      --card-border: rgba(145, 224, 255, 0.24);
+      --subcard-bg: rgba(9, 19, 44, 0.56);
+      --text-main: #eef6ff;
+      --text-muted: #b6cbe6;
+      --accent-cyan: #7be3ff;
+      --accent-gold: #ffe07d;
+      --accent-pink: #ff8fd4;
+      --badge-bg: rgba(123, 227, 255, 0.14);
+      --shadow: 0 24px 64px rgba(3, 8, 22, 0.55);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-main);
+      background:
+        radial-gradient(circle at 16% 12%, rgba(88, 195, 255, 0.18), transparent 36%),
+        radial-gradient(circle at 86% 24%, rgba(255, 130, 214, 0.14), transparent 34%),
+        radial-gradient(circle at 74% 82%, rgba(255, 215, 110, 0.12), transparent 38%),
+        linear-gradient(165deg, var(--bg-top) 0%, var(--bg-mid) 52%, var(--bg-bot) 100%);
+      background-attachment: fixed;
+      line-height: 1.68;
+      -webkit-font-smoothing: antialiased;
+      padding: 28px 16px 56px;
+    }
+
+    .container {
+      max-width: 880px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 26px;
+      padding: 28px 28px 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink), var(--accent-gold));
+      opacity: 0.9;
+    }
+
+    .hero-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .bubble-emblem {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.18) 22%, rgba(123, 227, 255, 0.34) 62%, rgba(255, 143, 212, 0.42) 100%);
+      border: 2px solid rgba(255, 255, 255, 0.65);
+      box-shadow: 0 0 24px rgba(123, 227, 255, 0.35), inset 0 -6px 12px rgba(74, 152, 255, 0.35);
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent-cyan);
+      margin: 0 0 4px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 3vw, 2.15rem);
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .lang-switch {
+      display: inline-flex;
+      background: rgba(6, 13, 32, 0.72);
+      border: 1px solid rgba(145, 224, 255, 0.28);
+      border-radius: 999px;
+      padding: 4px;
+      gap: 4px;
+    }
+
+    .lang-btn {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--text-muted);
+      font: inherit;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: background-color 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .lang-btn:hover {
+      color: var(--text-main);
+    }
+
+    .lang-btn[aria-pressed="true"] {
+      background: linear-gradient(135deg, #43b5ff, #6b7cff);
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(76, 155, 255, 0.42);
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .meta-pill {
+      background: var(--subcard-bg);
+      border: 1px solid rgba(145, 224, 255, 0.16);
+      border-radius: 14px;
+      padding: 10px 14px;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .meta-val {
+      font-size: 0.94rem;
+      font-weight: 700;
+      color: var(--text-main);
+      word-break: break-word;
+    }
+
+    .meta-val code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88rem;
+      color: var(--accent-gold);
+    }
+
+    .policy-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      margin-bottom: 22px;
+    }
+
+    .lang-banner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      padding-bottom: 16px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(145, 224, 255, 0.16);
+    }
+
+    .lang-tag {
+      display: inline-block;
+      background: var(--badge-bg);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(123, 227, 255, 0.35);
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 4px 12px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .summary-callout {
+      background: linear-gradient(135deg, rgba(67, 181, 255, 0.14), rgba(119, 102, 255, 0.12));
+      border: 1px solid rgba(123, 227, 255, 0.28);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 24px;
+      font-size: 0.97rem;
+    }
+
+    .summary-callout strong {
+      color: var(--accent-gold);
+    }
+
+    section.policy-section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      margin: 24px 0 8px;
+      padding-top: 6px;
+      display: flex;
+      align-items: baseline;
+      gap: 8px;
+    }
+
+    section.policy-section h2:first-of-type {
+      margin-top: 8px;
+    }
+
+    p {
+      margin: 0 0 12px;
+      color: var(--text-main);
+    }
+
+    ul {
+      margin: 8px 0 14px;
+      padding-left: 22px;
+      color: var(--text-main);
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    li strong {
+      color: #ffffff;
+    }
+
+    code.inline {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+      background: rgba(6, 13, 32, 0.68);
+      border: 1px solid rgba(145, 224, 255, 0.22);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: var(--accent-gold);
+    }
+
+    a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(123, 227, 255, 0.45);
+    }
+
+    a:hover {
+      color: #ffffff;
+      border-bottom-color: #ffffff;
+    }
+
+    .contact-box {
+      background: var(--subcard-bg);
+      border: 1px solid rgba(145, 224, 255, 0.2);
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-top: 10px;
+    }
+
+    .contact-box p:last-child {
+      margin-bottom: 0;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.86rem;
+      margin-top: 12px;
+    }
+
+    /* Crawler-safe visibility toggling: English stays visible by default on initial load */
+    body.mode-en #policy-vi {
+      display: none;
+    }
+
+    body.mode-vi #policy-en {
+      display: none;
+    }
+
+    body.mode-both #policy-en,
+    body.mode-both #policy-vi {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 10px 40px;
+      }
+
+      .hero,
+      .policy-card {
+        padding: 20px 18px;
+        border-radius: 20px;
+      }
+
+      .lang-switch {
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .lang-btn {
+        flex: 1;
+        text-align: center;
+        padding: 8px 8px;
+        font-size: 0.84rem;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        color: #111827;
+        padding: 0;
+      }
+
+      .hero,
+      .policy-card,
+      .meta-pill,
+      .summary-callout,
+      .contact-box {
+        background: #ffffff;
+        color: #111827;
+        border-color: #d1d5db;
+        box-shadow: none;
+        backdrop-filter: none;
+      }
+
+      .lang-switch,
+      .bubble-emblem {
+        display: none;
+      }
+
+      section.policy-section h2,
+      .eyebrow,
+      .lang-tag,
+      a {
+        color: #0f3a75;
+      }
+
+      p,
+      li,
+      .meta-val,
+      .meta-label,
+      footer {
+        color: #111827;
+      }
+
+      .meta-val code,
+      code.inline {
+        color: #111827;
+        background: #f3f4f6;
+        border-color: #d1d5db;
+      }
+
+      body.mode-en #policy-vi,
+      body.mode-vi #policy-en {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body class="mode-en">
+  <main class="container">
+    <header class="hero">
+      <div class="hero-top">
+        <div class="brand-row">
+          <div class="bubble-emblem" aria-hidden="true"></div>
+          <div>
+            <p class="eyebrow">DAEMON STACK</p>
+            <h1 id="page-title">Bubble Sky — Privacy Policy</h1>
+          </div>
+        </div>
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn" data-mode="en" aria-pressed="true">English</button>
+          <button type="button" class="lang-btn" data-mode="vi" aria-pressed="false">Tiếng Việt</button>
+          <button type="button" class="lang-btn" data-mode="both" aria-pressed="false">Both</button>
+        </div>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta-pill">
+          <span class="meta-label">Application</span>
+          <span class="meta-val">Bubble Sky</span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Package ID</span>
+          <span class="meta-val"><code>vn.daemonstack.bubblesky</code></span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Developer</span>
+          <span class="meta-val">DAEMON STACK</span>
+        </div>
+        <div class="meta-pill">
+          <span class="meta-label">Effective / Last Updated</span>
+          <span class="meta-val">November 14, 2026</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ENGLISH VERSION -->
+    <section id="policy-en" class="policy-card policy-section" lang="en">
+      <div class="lang-banner">
+        <span class="lang-tag">English Version</span>
+        <span style="color: var(--text-muted); font-size: 0.88rem;">Applies to Android &amp; Google Play distribution</span>
+      </div>
+
+      <div class="summary-callout">
+        <strong>At a glance:</strong> Bubble Sky is an offline single-player arcade game. The current release does <strong>not</strong> require login, does <strong>not</strong> display ads, and does <strong>not</strong> collect, transmit, sell, or share any personal data. All game progress is stored strictly on your device.
+      </div>
+
+      <h2>1. Overview</h2>
+      <p>
+        This Privacy Policy explains how <strong>DAEMON STACK</strong> ("we", "our", or "us") handles information when you install or play the mobile game <strong>Bubble Sky</strong> (Android Package ID: <code class="inline">vn.daemonstack.bubblesky</code>). By using Bubble Sky, you acknowledge the practices described on this page.
+      </p>
+
+      <h2>2. Information Collection and Use</h2>
+      <p>
+        Bubble Sky is designed with privacy first. We do <strong>not</strong> require user registration or sign-in, and we do <strong>not</strong> collect, transmit to external servers, store remotely, sell, or share any personally identifiable information or device data, including:
+      </p>
+      <ul>
+        <li>Personal identifiers (name, email address, phone number, or physical address);</li>
+        <li>Device or advertising identifiers (Google Advertising ID / AAID, IMEI, MAC address);</li>
+        <li>Location data, usage telemetry, crash logs sent over the network, or contacts.</li>
+      </ul>
+
+      <h2>3. Local Device Storage &amp; Data Deletion</h2>
+      <p>
+        To preserve your gameplay experience, Bubble Sky saves non-personal game progress strictly locally inside the app's private storage on your device (in the local save file <code class="inline">soap_bubble_save.cfg</code>). Locally saved data includes:
+      </p>
+      <ul>
+        <li>High score and maximum combo streak records;</li>
+        <li>Mission progress, unlocked bubble skins, and selected sky theme;</li>
+        <li>In-game item inventory counts;</li>
+        <li>Audio preferences (music/SFX toggles) and language selection (English or Vietnamese).</li>
+      </ul>
+      <p>
+        <strong>How to delete your data:</strong> Because all progress resides exclusively on your device and never leaves it, you can permanently erase all saved Bubble Sky data at any time via <em>Android Settings &rarr; Apps &rarr; Bubble Sky &rarr; Storage &rarr; Clear data</em>, or by uninstalling the app from your device.
+      </p>
+
+      <h2>4. Permissions &amp; Offline Operation</h2>
+      <p>
+        Bubble Sky operates completely offline with no internet connection required. The app does not request access to sensitive Android permissions such as camera, microphone, contacts, precise or approximate location, phone state, or external media storage.
+      </p>
+
+      <h2>5. Third-Party Services &amp; Advertising</h2>
+      <p>
+        The current release of Bubble Sky contains <strong>no</strong> third-party advertising networks, <strong>no</strong> third-party analytics SDKs, and <strong>no</strong> behavioral tracking tools. Note that Google Play itself may independently collect standard platform distribution or store installation diagnostics under Google's own privacy terms when you download the app through Google Play Store.
+      </p>
+      <p>
+        If future updates to Bubble Sky introduce optional features or third-party services (such as advertising SDKs), we will update this Privacy Policy and our Google Play Data Safety disclosures before releasing that update.
+      </p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>
+        We do not knowingly collect, solicit, or store personal data from children or users of any age. Because Bubble Sky neither collects personal information nor communicates with external servers, it complies with applicable children's privacy regulations (including COPPA and GDPR-K).
+      </p>
+
+      <h2>7. Data Security</h2>
+      <p>
+        All game state data is protected within your Android device's standard application sandbox and is never transmitted across any network by Bubble Sky.
+      </p>
+
+      <h2>8. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time—for example, when adding new game capabilities or updating compliance disclosures. Any changes will be posted on this page with an updated <em>Effective / Last Updated</em> date at the top.
+      </p>
+
+      <h2>9. Contact Us</h2>
+      <p>
+        If you have any questions, privacy inquiries, or feedback regarding Bubble Sky or this Privacy Policy, please contact us:
+      </p>
+      <div class="contact-box">
+        <p><strong>Developer:</strong> DAEMON STACK</p>
+        <p><strong>Application:</strong> Bubble Sky (<code class="inline">vn.daemonstack.bubblesky</code>)</p>
+        <p><strong>Support Email:</strong> <a href="mailto:alpha.lloyd1368@gmail.com">alpha.lloyd1368@gmail.com</a></p>
+      </div>
+    </section>
+
+    <!-- VIETNAMESE VERSION -->
+    <section id="policy-vi" class="policy-card policy-section" lang="vi">
+      <div class="lang-banner">
+        <span class="lang-tag">Phiên bản Tiếng Việt</span>
+        <span style="color: var(--text-muted); font-size: 0.88rem;">Áp dụng cho ứng dụng Android trên Google Play</span>
+      </div>
+
+      <div class="summary-callout">
+        <strong>Tóm tắt nhanh:</strong> Bubble Sky là tựa game arcade chơi đơn ngoại tuyến (offline). Phiên bản hiện tại <strong>không</strong> yêu cầu đăng nhập, <strong>không</strong> chứa quảng cáo và <strong>không</strong> thu thập, gửi ra ngoài, bán hay chia sẻ bất kỳ dữ liệu cá nhân nào. Mọi tiến trình chơi được lưu hoàn toàn cục bộ trên thiết bị của bạn.
+      </div>
+
+      <h2>1. Giới thiệu chung</h2>
+      <p>
+        Chính sách Bảo mật này mô tả cách <strong>DAEMON STACK</strong> ("chúng tôi") xử lý thông tin khi bạn cài đặt và chơi trò chơi di động <strong>Bubble Sky</strong> (Mã gói Android / Package ID: <code class="inline">vn.daemonstack.bubblesky</code>). Khi sử dụng Bubble Sky, bạn xác nhận đã đọc và hiểu các nguyên tắc nêu trên trang này.
+      </p>
+
+      <h2>2. Thu thập và sử dụng thông tin</h2>
+      <p>
+        Bubble Sky được thiết kế đặt quyền riêng tư lên hàng đầu. Trò chơi <strong>không</strong> yêu cầu tạo tài khoản và <strong>không</strong> thu thập, truyền tải lên máy chủ ngoài, lưu trữ từ xa, bán hoặc chia sẻ bất kỳ dữ liệu cá nhân hay mã định danh thiết bị nào, bao gồm:
+      </p>
+      <ul>
+        <li>Thông tin cá nhân (họ tên, email, số điện thoại, địa chỉ);</li>
+        <li>Mã định danh thiết bị hoặc mã quảng cáo (Google Advertising ID / AAID, IMEI, địa chỉ MAC);</li>
+        <li>Dữ liệu vị trí, nhật ký hành vi người dùng, danh bạ hay tệp tin trên máy.</li>
+      </ul>
+
+      <h2>3. Lưu trữ cục bộ trên thiết bị &amp; Xóa dữ liệu</h2>
+      <p>
+        Để giữ nguyên thành tích chơi của bạn, Bubble Sky chỉ lưu dữ liệu tiến trình phi cá nhân ngay trong vùng nhớ riêng của ứng dụng trên điện thoại (tệp lưu cục bộ <code class="inline">soap_bubble_save.cfg</code>). Các dữ liệu lưu tại máy gồm:
+      </p>
+      <ul>
+        <li>Điểm cao nhất và chuỗi combo kỷ lục;</li>
+        <li>Tiến độ nhiệm vụ, các trang phục bong bóng đã mở khóa và chủ đề bầu trời đang chọn;</li>
+        <li>Số lượng vật phẩm hỗ trợ hiện có trong trò chơi;</li>
+        <li>Tùy chọn âm thanh (nhạc nền/hiệu ứng) và ngôn ngữ hiển thị (Tiếng Anh hoặc Tiếng Việt).</li>
+      </ul>
+      <p>
+        <strong>Cách xóa dữ liệu:</strong> Vì toàn bộ dữ liệu chỉ nằm trên máy của bạn và không bao giờ rời khỏi thiết bị, bạn có thể xóa vĩnh viễn mọi dữ liệu Bubble Sky bất cứ lúc nào bằng cách vào <em>Cài đặt Android &rarr; Ứng dụng &rarr; Bubble Sky &rarr; Lưu trữ &rarr; Xóa dữ liệu</em>, hoặc gỡ cài đặt ứng dụng.
+      </p>
+
+      <h2>4. Quyền truy cập &amp; Hoạt động ngoại tuyến</h2>
+      <p>
+        Bubble Sky hoạt động hoàn toàn ngoại tuyến (không cần kết nối Internet). Ứng dụng không yêu cầu bất kỳ quyền nhạy cảm nào như máy ảnh (Camera), micro, danh bạ, vị trí địa lý, trạng thái cuộc gọi hay thư viện ảnh.
+      </p>
+
+      <h2>5. Dịch vụ bên thứ ba &amp; Quảng cáo</h2>
+      <p>
+        Phiên bản Bubble Sky hiện tại <strong>không</strong> tích hợp mạng quảng cáo bên thứ ba, <strong>không</strong> gắn bộ công cụ phân tích theo dõi (analytics SDK) và không theo dõi hành vi người dùng. Khi bạn tải ứng dụng qua Cửa hàng Google Play, bản thân Google Play có thể thu thập dữ liệu phân phối/chẩn đoán kỹ thuật tiêu chuẩn theo chính sách riêng của Google.
+      </p>
+      <p>
+        Nếu các bản cập nhật trong tương lai của Bubble Sky bổ sung tính năng mới hoặc dịch vụ bên thứ ba (chẳng hạn như quảng cáo), chúng tôi sẽ cập nhật Chính sách Bảo mật này cũng như phần khai báo An toàn dữ liệu (Data Safety) trên Google Play trước khi phát hành bản cập nhật đó.
+      </p>
+
+      <h2>6. Quyền riêng tư của trẻ em</h2>
+      <p>
+        Chúng tôi không chủ đích thu thập, yêu cầu hay lưu trữ thông tin cá nhân từ trẻ em hoặc người dùng ở bất kỳ độ tuổi nào. Do Bubble Sky không thu thập dữ liệu cá nhân và không kết nối máy chủ ngoài, trò chơi đáp ứng đầy đủ các quy định về bảo vệ quyền riêng tư trẻ em hiện hành (bao gồm COPPA và GDPR-K).
+      </p>
+
+      <h2>7. Bảo mật dữ liệu</h2>
+      <p>
+        Toàn bộ dữ liệu lưu trạng thái trò chơi nằm gọn trong hộp cát (sandbox) bảo mật chuẩn của hệ điều hành Android trên thiết bị và hoàn toàn không được Bubble Sky truyền tải qua mạng.
+      </p>
+
+      <h2>8. Thay đổi Chính sách Bảo mật</h2>
+      <p>
+        Chúng tôi có thể cập nhật Chính sách Bảo mật này theo thời gian khi trò chơi bổ sung tính năng mới hoặc cần điều chỉnh thông tin tuân thủ. Mọi thay đổi sẽ được đăng tải công khai ngay tại trang này kèm ngày <em>Cập nhật gần nhất</em> mới.
+      </p>
+
+      <h2>9. Liên hệ</h2>
+      <p>
+        Nếu bạn có bất kỳ câu hỏi, yêu cầu về quyền riêng tư hoặc góp ý nào liên quan đến Bubble Sky, vui lòng liên hệ với chúng tôi:
+      </p>
+      <div class="contact-box">
+        <p><strong>Nhà phát triển:</strong> DAEMON STACK</p>
+        <p><strong>Ứng dụng:</strong> Bubble Sky (<code class="inline">vn.daemonstack.bubblesky</code>)</p>
+        <p><strong>Email hỗ trợ:</strong> <a href="mailto:alpha.lloyd1368@gmail.com">alpha.lloyd1368@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2026 DAEMON STACK &mdash; Bubble Sky (<code class="inline">vn.daemonstack.bubblesky</code>)
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var pageTitle = document.getElementById("page-title");
+      var buttons = document.querySelectorAll(".lang-btn[data-mode]");
+
+      function setMode(mode) {
+        if (mode !== "en" && mode !== "vi" && mode !== "both") {
+          mode = "en";
+        }
+        body.classList.remove("mode-en", "mode-vi", "mode-both");
+        body.classList.add("mode-" + mode);
+
+        for (var i = 0; i < buttons.length; i++) {
+          var btn = buttons[i];
+          var active = btn.getAttribute("data-mode") === mode;
+          btn.setAttribute("aria-pressed", active ? "true" : "false");
+        }
+
+        if (pageTitle) {
+          if (mode === "vi") {
+            pageTitle.textContent = "Bubble Sky — Chính Sách Bảo Mật";
+            document.title = "Chính Sách Bảo Mật — Bubble Sky | DAEMON STACK";
+          } else if (mode === "both") {
+            pageTitle.textContent = "Bubble Sky — Privacy Policy / Chính Sách Bảo Mật";
+            document.title = "Privacy Policy — Bubble Sky | DAEMON STACK";
+          } else {
+            pageTitle.textContent = "Bubble Sky — Privacy Policy";
+            document.title = "Privacy Policy — Bubble Sky | DAEMON STACK";
+          }
+        }
+      }
+
+      for (var j = 0; j < buttons.length; j++) {
+        buttons[j].addEventListener("click", function () {
+          setMode(this.getAttribute("data-mode"));
+        });
+      }
+
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var qLang = params.get("lang");
+        var hash = (window.location.hash || "").replace("#", "").toLowerCase();
+        if (qLang === "vi" || qLang === "both" || qLang === "en") {
+          setMode(qLang);
+        } else if (hash === "vi" || hash === "policy-vi") {
+          setMode("vi");
+        } else if (hash === "both") {
+          setMode("both");
+        }
+      } catch (err) {
+        setMode("en");
+      }
+    })();
+  </script>
+</body>
+</html>
